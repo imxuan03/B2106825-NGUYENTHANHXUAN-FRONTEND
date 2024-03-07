@@ -2,7 +2,8 @@
   <div id="app">
     <AppHeader />
     <div class="container mt-3">
-      <router-view />
+      <router-view /> 
+      <!-- là một thẻ placeholder mà Vue Router sử dụng để render nội dung của các route trong ứng dụng Vue.js của bạn. -->
     </div>
   </div>
 </template>
