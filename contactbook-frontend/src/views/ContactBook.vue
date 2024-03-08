@@ -14,6 +14,7 @@
                 v-model:activeIndex="activeIndex"
             />
             <p v-else>Không có liên hệ nào.</p>
+            
             <div class="mt-3 row justify-content-around align-items-center">
                 <button class="btn btn-sm btn-primary" @click="refreshList()">
                     <i class="fas fa-redo"></i> Làm mới
@@ -112,6 +113,7 @@ export default {
         },
         refreshList() {
             this.retrieveContacts();
+            this.searchText = "";
             this.activeIndex = -1;
         },
         async removeAllContacts() {
